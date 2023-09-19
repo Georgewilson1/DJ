@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ur school isnt blocked here suckers!!!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .game-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CarterRoblox.co.uk Mini Games</h1>
+    <p>Click a button below to play our mini games:</p>
+    <button class="game-button" id="football-button">Play Football Mini-Game</button>
+    <button class="game-button" id="game2-button">Play Game 2</button>
+
+    <script>
+        const footballButton = document.getElementById("football-button");
+        const game2Button = document.getElementById("game2-button");
+
+        // Function to open a mini-game
+        function openMiniGame(miniGameURL) {
+            // Open the mini-game in a new window or tab
+            window.open(miniGameURL, "_blank");
+        }
+
+        // Event listener for the football mini-game button
+        footballButton.addEventListener("click", () => {
+            // Specify the local file URL of your football mini-game HTML file
+            const footballGameURL = "file:///C:/Users/George/OneDrive/Desktop/FootballMiniGame.html";
+            openMiniGame(footballGameURL);
+        });
+
+        // Event listener for the Game 2 button (replace with your own URL)
+        game2Button.addEventListener("click", () => {
+            // Specify the local file URL of your Game 2 HTML file
+            const game2URL = "file:///C:/Users/George/OneDrive/Desktop/Game2.html";
+            openMiniGame(game2URL);
+        });
+    </script>
+</body>
+</html>
